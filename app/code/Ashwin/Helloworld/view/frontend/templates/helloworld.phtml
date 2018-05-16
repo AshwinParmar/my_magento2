@@ -1,1 +1,13 @@
 <h1><?php echo $this->getHelloWorldTxt(); ?></h1>
+
+<h2>List of Categories</h2>
+<ul>
+<?php foreach($block->getStoreCategories(true, true, true) as $_category): ?>
+<?php 
+  if (!$_category->getIsActive()) {
+    continue;
+  }
+?>
+<li><?php print $_category->getName(); ?> (<?php print $_category->getProductCount(); ?>)</li>
+<?php endforeach; ?>
+</ul>
