@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+		<add 
+			id="Ashwin_Contact::contact_grid" 
+			title="Contact Grid" 
+			translate="title" 
+			module="Ashwin_Contact" 
+			sortOrder="51" 
+			resource="Ashwin_Contact::contact_grid"
+			action="contacts/contact/index"
+			/>
+    </menu>
+</config>
