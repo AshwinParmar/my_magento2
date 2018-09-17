@@ -2,4 +2,7 @@
     <type name="Magento\Contact\Controller\Index\Post">
         <plugin name="Ashwin_Contact_Plugin" type="Ashwin\Contact\Plugin\ContactPlugin" sortOrder="10" disabled="false" />
     </type>
+	
+	<preference for="Magento\Catalog\Pricing\Render\FinalPriceBox" type="Ashwin\Contact\Override\Pricing\Render\FinalPriceBox" />
+	
 </config>
